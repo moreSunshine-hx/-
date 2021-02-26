@@ -1,0 +1,45 @@
+
+*{
+    margin: 0;padding: 0;
+}
+li{
+    list-style: none;
+}
+body{
+    background-color: #eeeeee;
+}
+.box{
+    width: 1400px;
+    margin: 0 auto;
+}
+.box ul{
+    width: 1400;
+    text-align: center;
+}
+.box ul li{
+    background-color: #ffffff;
+    width: 234px;
+    height: 300px;
+    display: inline-block;
+    margin-bottom: 14px;
+    margin-left: 14px;
+    padding: 10px 0px;
+}
+.box ul li img{
+    width: 100%;
+}
+.box ul li p{
+    text-align: center;
+}
+.box ul li .head{
+    margin: 0 10px 2px;
+}
+.box ul li .txt{
+    margin: 0 10px 5px;
+    height: 18px;
+    font-size: 12px;
+    color: #b0b0b0;
+}
+.box ul li .price{
+    color: #ff6700;
+}

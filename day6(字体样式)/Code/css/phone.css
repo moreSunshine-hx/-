@@ -1,0 +1,55 @@
+.box{
+    background-color: #F5F5F5;
+    margin-top: 50px;
+    border: 1px solid transparent;
+}
+.outer{
+    margin: 10px auto;
+    width: 1226px;
+    height: 628px;
+    text-align: center;
+}
+.outer .big{
+    height: 628px;
+    width: 234px;
+    display: inline-block;
+    float: left;
+}
+.outer .big img{
+    line-height: 628px;
+}
+.outer .list{
+    width: 978px;
+    height: 628px;
+    display: inline-block;
+}
+.outer .list ul{
+    width: 978px;
+    height: 628px;
+    display: inline-block;
+    float: left;
+    background-color: #fffff;
+}
+.outer .list ul li{
+    box-sizing: border-box;
+    display: inline-block;
+    width: 234px;
+    height: 300px;
+    background-color: #ffff;
+    margin-left: 6px;
+    padding: 20px 0 ;
+    margin-bottom: 14px;
+}
+.outer .list ul li p{/*可以将超出部分变成...*/
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.outer .list ul li .desc{
+    color: #b0b0b0;
+    margin: 5px 0;
+}
+.outer .list ul li .price{
+    color: #ff6709;
+    margin-top: 8px;
+}

@@ -1,0 +1,49 @@
+.box{
+    margin: 50px;
+}
+.box .farme{
+    width: 300px;
+    height: 320px;
+    margin:0 auto ;
+    border: 1px solid rgb(181, 181, 181);
+    padding: 10px 15px;
+    box-sizing: border-box;
+}
+.box .farme .title{
+    margin-left: 10px;
+    font-size:18px ;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.box .farme .title span{
+    color: #ddd;
+    margin-left: 20px;
+    font-weight:bold;
+    text-indent: 30;
+}
+.box .farme .title .s1{
+    color: black;
+    margin-left: 0px;
+
+}
+.box .farme .title h3{
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #ccc;
+
+}
+
+.box .farme .list ul li{
+    font-size: 14px;
+    line-height:35px;
+    text-indent: 35px;
+    background: url('../img/7-3.png') no-repeat;
+    background-position: 0 10px;
+    
+}
+.box .farme .list ul li a{
+    color:#000;
+    text-decoration: none;
+}
+.l2{
+    background-position: 0 170px;
+}

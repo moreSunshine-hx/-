@@ -1,0 +1,91 @@
+.box{
+    height:380px ;
+    background-color: #f5f5f5;
+    margin-top: 50px;
+    border: 1px solid transparent;
+}
+.box .outer{
+    box-sizing: border-box;
+    margin: 20px auto;
+    width:1250px;
+    height:345px;
+
+}
+.box .outer .time{
+    width: 234px;
+    height: 340px;
+    display: inline-block;
+    text-align: center;
+    float: left;
+    background-color: #fff;
+    border-top: 1px solid rgb(15, 216, 243);
+}
+.box .outer .time h1{
+    margin-top: 15px;
+    font-size: 21px;
+    color: #ff6709;
+}    
+.box .outer .time img{
+    margin: 25px 0;
+}
+.box .outer .time p{
+    font-size: 18px;
+    margin: 25px 0;
+}
+.box .outer .time .dig{
+    display: inline-block;
+    width: 46px;
+    height: 46px;
+    font-size: 24px;
+    background-color: #605751;
+    color: #fff;
+    line-height: 46px;
+}
+.box .outer .time .sym{
+    display: inline-block;
+    font-size: 25px;
+}
+.box .outer .comm{
+    width: 990px;
+    height: 340px;
+    display: inline-block;
+    text-align: center;
+    float: left;
+    margin-left: 10px;
+}
+.box .outer .comm ul {
+    width: 978px;
+    height: 340px;
+    display: inline-block;
+
+}
+.box .outer .comm ul li {
+    width: 234px;
+    height: 340px;
+    margin: 0 3px;
+    display: inline-block;
+    background-color: #fff;
+}
+.box .outer .comm ul li h3{
+    display: block;
+}
+.box .outer .comm ul li .desc{
+    color: #b0b0b0;
+    margin: 5px 0;
+}
+.box .outer .comm ul li .price{
+    color: #ff6709;
+    margin-top: 8px;
+}
+#color0{
+    border-top: 1px solid #05ff65;
+}
+#color1{
+    border-top: 1px solid #0544ff;
+}
+#color2{
+    border-top: 1px solid #ff059f;
+}
+#color3{
+    border-top: 1px solid #ff6105;
+}
