@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        .box{
+            margin: 0 auto;
+            width: 1226px;
+            overflow: hidden;
+            box-sizing: border-box;
+            padding: 20px 0 0 ;
+        }
+        .box .list{
+            width: 160px;
+            display: inline-block;
+            float: left;
+        }
+        .box .list .title{
+            color: #424242;
+            margin: -1px 0 26px ;
+            font-size: 14px;
+        }
+        .box .list .content{
+            color: #757575;
+            font-size: 13px;
+            margin: 10px 0 0 ;
+        }
+        .box .innerright{
+            width: 200px;
+            height: 200;
+            float: left;
+            border-left: #312727;
+            text-align: center;
+        }
+        .box .innerright .mark{
+            font-size: 22px;
+            color:#ff6700;
+            margin: 0 0 5px ;
+        }
+        .box .innerright .mark2{
+            font-size: 13px;
+            margin: 0 0 5px ;
+        }
+        .box .innerright a{
+            width: 140px;
+            height: 30px;
+            font-size: 12px;
+            border: 1px solid #ff6700;
+            display:inline-block;
+            color: #ff6700;
+            line-height: 30px;
+            position: relative;
+        }
+        .box .innerright a>img{
+            position: absolute;
+            top: 7px;
+            left:25px
+
+        }
+        .box .innerright .bottom{
+            margin: 10px 0 0 ;
+            color: #757575;
+            font-size: 13px;
+            line-height:19px ;
+        }
+        .box .innerright .bottom :hover{
+            color: #ff6700;
+        }
+        .box .innerright .bottom>img{ 
+            width: 13px;
+        }
+    </style>
+<body>
+    <div class="box">
+        <dl class="list">
+            <dt class="title">帮助中心</dt>
+            <dd class="content">账户管理</dd>
+            <dd class="content">购物指南</dd>
+            <dd class="content">订单操作</dd>
+        </dl>
+        <dl class="list">
+            <dt class="title"> 服务支持 </dt>
+            <dd class="content">售后政策</dd>
+            <dd class="content">自助服务</dd>
+            <dd class="content">相关下载</dd>
+        </dl>
+        <dl class="list">
+            <dt class="title">线下门店</dt>
+            <dd class="content">小米之家</dd>
+            <dd class="content">服务网点</dd>
+            <dd class="content">授权体验店</dd>
+        </dl>
+        <dl class="list">
+            <dt class="title">关于小米</dt>
+            <dd class="content">了解小米</dd>
+            <dd class="content">加入小米</dd>
+            <dd class="content">投资者关系</dd>
+            <dd class="content">企业社会责任</dd>
+            <dd class="content">廉洁举报</dd>
+        </dl>
+        <dl class="list">
+            <dt class="title">关注我们</dt>
+            <dd class="content">新浪微博</dd>
+            <dd class="content">官方微信</dd>
+            <dd class="content">联系我们</dd>
+            <dd class="content">公益基金会</dd>
+        </dl>
+        <dl class="list">
+            <dt class="title">特色服务</dt>
+            <dd class="content">F 码通道</dd>
+            <dd class="content">礼物码</dd>
+            <dd class="content">防伪查询</dd>
+        </dl>
+        <div class="innerright">
+            <p class="mark">400-100-5678</p>
+            <p class="mark2">8:00-18:00（仅收市话费)</p>
+            <a href="javascript:;">
+                <img src="./img/xinxi.png" >
+                人工客服
+            </a>
+            <div class="bottom">
+                关注小米
+                <img src="./img/weibo.png" alt="">
+                <img src="./img/weixin.png" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

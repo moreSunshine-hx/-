@@ -1,0 +1,73 @@
+.box{
+    width: 1226px;
+    height: 460px;
+    margin:50px auto;
+    background: url(../img/back.jpg);
+    background-size: cover;
+}
+.leftList{
+    width: 234px;
+    height: 460px;
+    position: relative;
+    background-color: rgba(12, 11, 11,.6);
+    padding: 20px 0;
+    box-sizing: border-box;
+}
+.leftList ul{
+    box-sizing: border-box;
+}
+.leftList .list{
+    box-sizing: border-box;
+}
+.leftList .list i{
+    width: 40px;
+    height: 40px;
+    float: right;
+    background:url(../img/jiantou.png);
+}
+.leftList .list .title{
+    width: 234px;
+    height: 43px;
+    line-height: 43px;
+    font-size: 18px;
+    color: #fff;
+    padding-left: 30px;
+}
+ .LL1 :hover {
+    background-color: rgb(235, 13, 13);
+}
+.leftList .child{
+    position:absolute;
+    width: 992px;
+    height: 460px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 5px 0px 10px #999;
+    left: 234px;
+    top: 0px;
+    display: none;
+}
+.leftList .child>ul{
+    background-color: #fff;
+}
+
+li:hover .child{
+    display: block;
+}
+.LL1 .child .goodlist{
+   background-color: #fff;
+}
+.child .goodlist li{
+    display: inline-block;
+    width: 20%;
+    height: 60px;
+    float: left;
+    padding-left: 20px;
+    padding-top: 10px;
+    box-sizing: border-box;
+    background-color: #fff;
+    margin-top: 30px;
+
+}
+.goods :hover {
+    background-color: #fff;
+}

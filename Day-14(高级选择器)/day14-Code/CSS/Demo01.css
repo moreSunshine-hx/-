@@ -1,0 +1,65 @@
+.inner{
+    width: 1226px;
+    height: 100px;
+    margin: 0 auto;
+    
+}
+.inner .log{
+    width: 55px;
+    height: 55px;
+    float: left;
+    margin-top:25px ;
+    background-size:100% ;
+    background: url(../img/mi.png);
+}
+.inner .list{
+    display: inline-block;
+    margin-left: 75px;
+}
+.inner .list>ul>li{
+    height: 100px;
+    display: inline-block;
+    box-sizing: border-box;
+    line-height: 100px;
+}
+.inner .list>ul>li>a{
+    padding: 26px 10px 38px;
+    font-size: 16px;
+    color: #000;
+}
+.search{
+    margin-left: 75px;
+    display: inline-block;
+}
+.search input{
+    width: 200px;
+    height: 50px;
+    display: inline-block;
+  
+}
+.search .sosuo{
+    width: 50px;
+    height: 56px;
+    border: 1px solid #000;
+    float: right;
+    border-left: transparent 1px solid;
+    padding: 13px 13px;
+    box-sizing: border-box;
+}
+.iconfont{
+    font-size: 25px;
+    color: #616161;
+    text-align: center;
+}
+list ul>li:hover a{
+    color: #ff6700;
+    transition: all 0.2s;
+}
+.inner .sosuo:hover{
+    background-color: #FF6700;
+    transition: all 0.2s;
+}
+.inner .sosuo:hover .iconfont{
+    color: white;
+    transition: all 0.2s;
+}
