@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+
+    background: linear-gradient(to right, #03a9f4,#f441a5,#ffeb3b,#03a9f4);
+    background-size: 400%;
+}
+div{
+    height: 1000px;
+}
+body:hover{
+    animation: liuguang 6s linear infinite;
+}
+@keyframes liuguang{
+
+    100%{
+        background-position: 400% 0;
+    }
+}
