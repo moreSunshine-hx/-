@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            background-color: antiquewhite;
+        }
+        
+        .box {
+            width: 55px;
+            height: 55px;
+            margin: 100px auto;
+        }
+        
+        .box a {
+            display: inline-block;
+            position: relative;
+            width: 55px;
+            height: 55px;
+            background-color: #ff6700;
+            overflow: hidden;
+            text-align: center;
+        }
+        
+        .box a:before,
+        .box a::after {
+            content: '';
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 55px;
+            height: 55px;
+            transition: all 0.2s;
+            vertical-align: middle;
+        }
+        
+        .box a::before {
+            background: url(./img/mi.png) no-repeat;
+            background-size: 100% 100%;
+            
+        }
+        
+        .box a::after {
+            margin-left: -55px;
+            background: url(./img/home.png) no-repeat;
+            background-size: 100% 100%;
+            transform: scale(.1);
+        }
+        
+        .box:hover a::after {
+            margin-left: 0px;
+            transform: scale(1.0);
+
+        }
+        
+        .box:hover a::before {
+            margin-left: 55px;
+            transform: scale(.1);
+        }
+
+    </style>
+<body>
+    <div class="box">
+        <a href="javascript:;"></a>
+    </div>
+</body>
+</html>
