@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+        <link rel="stylesheet" href="">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            transform-style:preserve-3d; 
+            width:200px; height:200px;
+            margin:200px auto;
+            transition:all 3s;
+            position:relative;
+        }
+        
+       :hover{ 
+            transform:rotateX(360deg) rotateY(360deg) ;
+         }
+        .face{
+            width:200px;
+            height:200px;
+            position:absolute;
+            background: linear-gradient(to right, #03a9f4,#f441a5,#ffeb3b,#03a9f4);
+            background-size: 400%;
+            animation: liuguang 6s linear infinite;
+            border: 1px solid transparent;
+            /* border: 1px solid #000; */
+        }
+        .face1{
+            transform:rotateY(90deg) translateZ(100px);
+        }
+        .face2{
+            transform:rotateY(90deg) translateZ(-100px);
+        }
+        .face3{
+            transform:rotateX(90deg) translateZ(100px);
+        }
+        .face4{
+            transform:rotateX(90deg) translateZ(-100px);
+        }
+        .face5{
+            transform:translateZ(-100px);
+        }
+        .face6{
+            transform:translateZ(100px);
+            text-align: center;
+            line-height: 200px;
+            font-size: 30px;
+        }
+        @keyframes liuguang{
+
+        100%{
+            background-position: 400% 0;
+            }
+        }
+
+
+    </style>
+<body>
+    <div class="box">
+        <div class="face face1"></div>
+        <div class="face face2"></div>
+        <div class="face face3"></div>
+        <div class="face face4"></div>
+        <div class="face face5"></div>
+        <div class="face face6"></div>
+    </div>
+</body>
+</html>
