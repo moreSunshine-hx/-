@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            
+        }
+        body{
+            background-color: #eeee;
+        }
+        .box{
+            display: flex;
+            width: 1240px;
+            height: 628px;
+            margin: auto;
+            flex-wrap: wrap;
+        }
+        .goods{
+            background-color: #ffff;
+            width: 234px;
+            height: 300px;
+            display: inline-block;
+            margin: 5px;
+            box-sizing: border-box;
+            text-align: center;
+            transition:all .5s;
+        }
+        .list{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction:column;
+            box-sizing: border-box;
+            justify-content:space-between
+        }
+        .head>img{
+            width: 234px;
+        }
+        .goods .title{
+            margin: 0 10px 2px;
+        }
+        .goods .txt{
+            margin: 0 10px 5px;
+            height: 18px;
+            font-size: 12px;
+            color: #b0b0b0;
+        }
+        .goods .price{
+            color: #ff6700;
+            display: inline-block;
+            margin-right: 5px;
+        }
+        .goods del{
+            color: #b0b0b0;
+        }
+        .l1{
+            background-color: transparent;
+        }
+        .goods .small{
+            width: 234px;
+            height: 140px;
+            box-sizing: border-box;
+            background-color: #ffffff;
+            text-align: center;
+            transition:all .5s;
+        }
+        .shuioming{
+            width: 100px;
+            height:100px ;
+            display: inline-block;
+        }
+        .img{
+            width: 100px;
+            height:100px ;
+            display: inline-block;
+            line-height: 140px;
+        }
+        .shuioming .title{
+            font-size: 14px;
+        }
+        .goods:hover{
+            transform: rotateY(10px);
+        }
+        .small:hover{
+            box-shadow: 0 10px 10px 10px #dddbdb;
+            transform: rotateY(10px);
+        }
+        .sh:hover{
+            box-shadow: 0 10px 10px 10px #d8d8d8;
+        }
+
+    </style>
+<body>
+    <div class="box">
+        <div class="goods head sh" >
+            <img src="./img/h1.png" alt="">
+        </div>
+        <a href="">
+            <div class="goods sh">
+                <img src="./img/1.png" >
+                <p class="title">小米全屏电视65英寸 E65X</p>
+                <p class="txt">全面屏设计</p>
+                <p class="price">2899元 </p><del> 3999元</del>
+            </div>
+        </a>
+        <div class="goods sh">
+            <img src="./img/2.png" >
+            <p class="title" >全面屏电视 E43K</p>
+            <p class="txt"  >全屏设计,海量内容</p>
+            <p class="price">1299元</p><del> 2999元</del>
+        </div>
+        <div class="goods sh">
+            <img src="./img/3.png" >
+            <p class="title" >小米电视4A 70英寸</p>
+            <p class="txt"  >大屏更享受</p>
+            <p class="price">3299元</p><del> 3999元</del>
+        </div>
+        <div class="goods sh">
+            <img src="./img/4.png" >
+            <p class="title" >米家空调</p>
+            <p class="txt"  >出众静音,快速冷热</p>
+            <p class="price">1699</p><del> 2399元</del>
+        </div>
+        <div class="goods head sh">
+            <img src="./img/h2.png">
+        </div>
+        <div class="goods sh">
+            <img src="./img/5.png" >
+            <p class="title" >米家互联网洗烘一体机</p>
+            <p class="txt"  >智能洗烘,省心省力</p>
+            <p class="price">2899</p><del> 3999元</del>
+        </div>
+        <div class="goods sh">
+            <img src="./img/6.png" >
+            <p class="title" >Redmi全自动波轮洗衣机1A</p>
+            <p class="txt"  >一键操作,父母都爱</p>
+            <p class="price">799</p><del> 1999元</del>
+        </div>
+        <div class="goods sh">
+            <img src="./img/7.png" >
+            <p class="title" >Air 13.3"2019款</p>
+            <p class="txt"  >新一代独立显卡</p>
+            <p class="price">4799</p><del> 5999元</del>
+        </div>
+        <div class="goods l1 list">
+            <div class="small">
+                <div class="shuioming">
+                    <h3 class="title">Redmi 智能电视 MAX 98"</h3>
+                    <p class="price">19999</p>
+                </div>
+                <div class="img">
+                    <img src="./img/8.png" alt="">
+                </div>
+            </div>
+            <div class="small">
+                <div class="shuioming">
+                    <h4>浏览更多</h4>
+                    <p>电视影音</p>
+                </div>
+                <div class="img">
+                    <img src="./img/more.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
