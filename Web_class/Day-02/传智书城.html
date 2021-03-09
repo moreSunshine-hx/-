@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>传智书城</title>
+</head>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .box{
+            width: 1000px;
+            height: 500px;
+            background-color: #ddd;
+            margin: 50px auto;
+
+        }
+        h3{
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+        .list{
+            display: inline-block;
+
+            margin-left: 150px;
+        }
+        .list .title{
+            text-align: right;
+        }
+        .list input{
+            margin: 5px 0;
+        }
+        .list span{
+            color: #999999;
+            font-size: 14px;
+            margin-left: 50px;
+        }
+        .tijiao{
+            width: 240px;
+            margin: 10px auto;
+        }
+        .tijiao span{
+            width: 140px;
+            height: 50px;
+            font-size:20px ;
+            color: #fff;
+            display: inline-block;
+            line-height: 50px;
+            text-align: center;
+            background-color:rgb(125, 108, 255) ;
+            border-radius: 10px;
+        }
+    </style>
+<body>
+    <div class="box">
+        <form action="">
+            <table class="header">
+                  <tr>
+                      <td>
+                          <h3>新会员注册</h3>
+                      </td>
+                  </tr>
+              </table>
+
+              <table class="list">
+                <tr>
+                    <td class="title">会员邮箱:&nbsp </td>
+                    <td>
+                        <input type="text">
+                    </td>
+                    <td>
+                        <span>请输入有效的邮箱地址</span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="title">会员名:&nbsp </td>
+                    <td>
+                        <input type="text">
+                    </td>
+                    <td>
+                        <span>字母 数字 下划线 不能数字开头</span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="title">密码:&nbsp </td>
+                    <td>
+                        <input type="password">
+                    </td>
+                    <td>
+                        <span>密码设置 6-16 个字符</span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="title">重复密码:&nbsp </td>
+                    <td>
+                        <input type="password">
+                    </td>
+                    <td>
+                        <span></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="title">性别: :&nbsp </td>
+                    <td>
+                        <input type="radio" name="sex" value="1" id="sex1" /><label for="sex1">男</label>
+                        <input type="radio" name="sex" value="2" id="sex2" /><label for="sex2">女</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="title">联系电话: :&nbsp </td>
+                    <td colspan="2">
+                        <input type="text" style="width: 365px;">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="title">个人简介:&nbsp </td>
+                    <td colspan="2">
+                        <textarea name="" id="" cols="50" rows="10" style="width: 365px;overflow-y:scroll;" >
+                        </textarea>
+                    </td>
+                </tr>
+            
+            </table>
+            <div class="tijiao">
+                <span>
+                    <b>同意并提交</b>
+                </span>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
