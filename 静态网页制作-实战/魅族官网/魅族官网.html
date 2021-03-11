@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/adv.css">
+<body>
+
+    <!-- 导航栏/标题栏 -->
+    <div class="navbox">
+        <div id="header">
+            <div class="head">
+                <svg t="1615363862540" class="icon" viewBox="0 0 5597 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1963" width="128" height="128"><path d="M2876.542 32h195.136v959.936h-195.136v-959.936zM1353.662 32h-1035.264c-87.488 0-158.4 71.616-158.4 160v799.936h186.112v-739.648c0-35.328 28.352-64 63.36-64h333.504v803.648h186.112v-803.648h333.504c35.008 0 63.36 28.672 63.36 64v739.648h186.112v-799.936c0-88.384-70.912-160-158.4-160zM1896.126 771.648v-181.44h740.736v-156.48h-740.736v-181.44c0-35.328 28.352-64 63.36-64h716.352v-156.288h-807.488c-87.424 0-158.336 71.616-158.336 160v639.936c0 88.384 70.912 160 158.4 160h807.488v-156.288h-716.416c-35.032-0.181-63.361-28.622-63.361-63.679 0-0.113 0-0.226 0.001-0.338zM4111.166 32h-833.344v156.288h689.728l-661.568 593.6c-106.112 91.648-37.056 210.112 51.008 210.112h842.88v-156.352h-703.232l662.528-593.6c106.88-97.152 42.624-210.048-48-210.048zM5221.886 32v739.648c0 35.328-28.352 64-63.36 64h-531.648c-35.032-0.181-63.361-28.622-63.361-63.679 0-0.113 0-0.226 0.001-0.338v-739.63h-185.6v799.936c0 88.384 70.912 160 158.4 160h713.28c87.488 0 158.4-71.616 158.4-160v-799.936h-186.112z" fill="#ffffff" p-id="1964"></path></svg>
+            </div>
+            <div class="goods_list">
+                <ul class="list">
+                    <li>手机</li>
+                    <li>Lipro</li>
+                    <li>声学</li>
+                    <li>配件</li>
+                    <li>生活</li>
+                    <li>Flyme</li>
+                    <li>服务</li>
+                    <li>专卖店</li>
+                    <li>社区</li>
+                    <li>企业服务</li>
+                    <li>APP下载</li>
+                </ul>
+            </div>
+            <div class="user">
+                <svg t="1615364996186" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5470" width="32" height="32"><path d="M780.357 574.138c-41.036-41.036-89.712-71.588-142.787-90.229 57.347-40.26 95.020-106.929 95.020-182.271 0-122.722-99.809-222.661-222.661-222.661-122.722 0-222.661 99.809-222.661 222.661 0 75.343 37.541 142.011 95.020 182.271-53.076 18.771-101.75 49.322-142.787 90.229-72.236 72.236-111.978 168.29-111.978 270.429 0 23.69 0 41.943 0.13 61.749 0.13 17.088 13.981 30.94 31.069 30.94h0.13c17.218-0.13 30.94-14.111 30.94-31.199-0.13-19.677-0.13-37.801-0.13-61.361 0-176.575 143.694-320.398 320.398-320.398s320.398 143.694 320.398 320.398c0 23.559 0 41.684-0.13 61.361-0.13 17.218 13.723 31.199 30.94 31.199h0.13c17.088 0 30.94-13.852 31.069-30.94 0.13-19.807 0.13-38.060 0.13-61.749-0.258-102.14-40.001-198.194-112.236-270.429zM349.406 301.637c0-88.546 71.977-160.524 160.524-160.524s160.524 71.977 160.524 160.524-71.977 160.524-160.524 160.524-160.524-72.106-160.524-160.524z" fill="#ffffff" p-id="5471"></path></svg>            <svg t="1615364937524" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4490" width="32" height="32"><path d="M406.7 893.6m-57.4 0a57.4 57.4 0 1 0 114.8 0 57.4 57.4 0 1 0-114.8 0Z" fill="#ffffff" p-id="4491"></path><path d="M708.7 893.6m-57.4 0a57.4 57.4 0 1 0 114.8 0 57.4 57.4 0 1 0-114.8 0Z" fill="#ffffff" p-id="4492"></path><path d="M938.3 204.7c-2.3-0.4-4.6-0.7-7-0.9h-640L281 117c-7.3-28.8-33-50.3-63.9-51.2H70.6c-22.6 0-41 18.3-41 41 0 22.6 18.3 41 41 41H178c12.4 0.9 24.6 10.1 26.8 22l0.3 2.5 2.1 17.7 64.5 538.5c5.2 32.4 33.3 57.2 67.2 57.2h446.7c22.6 0 41-18.3 41-41 0-22.6-18.3-41-41-41H373.2c-11.1-1.7-21.6-9.9-24.3-20.3l-7.3-61.3 463.9-25.4c15.1-1 27.7-10.2 34-22.8l0.6-1.2 135.2-286.1c12.5-31.7 1.1-74.6-37-81.9z" fill="#ffffff" p-id="4493"></path></svg>
+            </div>
+            <div class="search">
+                <input type="text" placeholder="魅族18">
+                <svg t="1615364705899" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2748" width="16" height="16"><path d="M924.352 844.256l-163.968-163.968a381.536 381.536 0 0 0 71.808-222.72c0-211.776-172.224-384-384-384s-384 172.224-384 384 172.224 384 384 384c82.56 0 158.912-26.432 221.568-70.912l164.16 164.16c12.416 12.416 38.592 15.04 51.072 2.624l45.248-45.248c12.416-12.544 6.592-35.392-5.888-47.936zM128.128 457.568c0-176.448 143.552-320 320-320s320 143.552 320 320-143.552 320-320 320-320-143.552-320-320z" p-id="2749" fill="#2c2c2c"></path></svg>
+            </div>
+        </div>
+    </div>
+    <!-- 四个小方块 -->
+    <div class="adv">
+        <div class="adv_box">
+            <img src="./img/adv1.png" alt="">
+            <em>魅族18系列</em>
+            <p>0 广告 0 推送 0 预装</p>
+        </div>
+        <div class="adv_box">
+            <img src="./img/adv2.jpg" alt="">
+            <em>让热爱为环保加油</em>
+            <p>充电器绿色换新计划</p>
+        </div><div class="adv_box">
+            <img src="./img/adv3.png" alt="">
+            <em>5G之家</em>
+            <p>电信套餐享大额补贴</p>
+        </div><div class="adv_box">
+            <img src="./img/adv4.jpg" alt="">
+            <em>mCycle</em>
+            <p>以旧换新</p>
+        </div>
+    </div>
+
+    <!-- 手机标题 -->
+    <div class="phone_title">
+        <h3>手机</h3>
+    </div>
+    <!-- 手机广告 -->
+    <div class="phone_adv"></div>
+    <!-- 手机内容 -->
+    <div class="phone_det">
+        <ul>
+            <li class="bigbox">
+                <span class="box-info">
+                    <span class="goods-name">魅族 18</span>
+                    <span class="goods-desc">高通骁龙 888 | 162g 6.2英寸轻妙手感</span>
+                    <span class="goods-price"><i >¥</i>4399</span>
+                    <img src="./img/魅族181.png" alt="">
+                </span>
+            </li>
+            <li class="bigbox">
+                <span class="box-info">
+                    <span class="goods-name">魅族 18 Pro</span>
+                    <span class="goods-desc">高通骁龙 888 | 2K+/ 120帧 微弧柔性屏</span>
+                    <span class="goods-price"><i >¥</i>4999</span>
+                    <img src="./img/魅族181.png" alt="">
+                </span>
+            </li>
+
+            <li class="smallbox">
+                <span class="box-info">
+                    <img src="./img/魅族171.png" alt="">
+                    <span class="goods-name">魅族 17「AG梦幻独角兽」</span>
+                    <span class="goods-desc">限时领券至高立省600</span>
+                    <span class="goods-price"><i >¥</i>3699</span>
+                </span>
+            </li>
+
+            <li class="smallbox">
+                <span class="box-info">
+                    <img src="./img/魅族172.png" alt="">
+                    <span class="goods-name">魅族 17「AG梦幻独角兽」</span>
+                    <span class="goods-desc">限时领券至高立省600</span>
+                    <span class="goods-price"><i >¥</i>3699</span>
+                </span>
+            </li>
+
+            <li class="smallbox">
+                <span class="box-info">
+                    <img src="./img/魅族173.png" alt="">
+                    <span class="goods-name">魅族 17「AG梦幻独角兽」</span>
+                    <span class="goods-desc">限时领券至高立省600</span>
+                    <span class="goods-price"><i >¥</i>3699</span>
+                </span>
+            </li>
+
+            <li class="smallbox">
+                <span class="box-info">
+                    <img src="./img/魅族174.png" alt="">
+                    <span class="goods-name">魅族 17「AG梦幻独角兽」</span>
+                    <span class="goods-desc">限时领券至高立省600</span>
+                    <span class="goods-price"><i >¥</i>3699</span>
+                </span>
+            </li>
+        </ul>
+        <div class="phone_title">
+            <h3>Lipro 智能家居</h3>
+        </div>
+    </div>
+
+    <!-- 智能家居 -->
+    <div class="Lipro_adv"></div>
+    <!-- 智能家居内容 -->
+    <div class="Lipro_det">
+        <ul>
+            <li class=" head1">
+                <span class="head_text">
+                    <span class="title"><b>魅族 Lipro LED 橱窗灯</b></span>
+                    <span class="con">博物馆级健康光 RG0 舒适低蓝光 磁吸随贴安装</span>
+                    <span class="price"><i>￥</i>269</span>
+                </span> 
+            </li>
+            <li class="goods">
+                <img src="./img/L2.png" alt="">
+                <div class="title">魅族 Lipro LED 灯泡</div>
+                <div class="con">博物馆级健康光 RG0舒适低蓝光</div>
+                <div class="price"><i>￥</i>49</div>
+            </li>
+            
+            <li class="goods">
+                <img src="./img/L3.jpg" alt="">
+                <div class="title">魅族 Lipro LED 橱柜灯</div>
+                <div class="con">博物馆级健康光 RG0 舒适低蓝光 磁吸随贴安装</div>
+                <div class="price"><i>￥</i>199</div>
+            </li>
+            <li class="goods">
+                <img src="./img/L4.png" alt="">
+                <div class="title">魅族 Lipro LED 筒灯</div>
+                <div class="con">博物馆级健康光 RG0 舒适低蓝光 IP54 密封设计</div>
+                <div class="price"><i>￥</i>299</div>
+            </li>
+            <li class=" head2">
+                <span class="head_text">
+                    <span class="title"><b>魅族 Lipro LED 灯泡</b></span>
+                    <span class="con">博物馆级健康光 RG0 舒适低蓝光 </span>
+                    <span class="price"><i>￥</i>269</span>
+                </span> 
+            </li>
+            <li class="goods">
+                <img src="./img/L6.png" alt="">
+                <div class="title">魅族 Lipro LED 地脚灯</div>
+                <div class="con">博物馆级健康光 | 无可见频闪 | 主动式雷达检测</div>
+                <div class="price"><i>￥</i>99</div>
+            </li>  
+            <li class="goods">
+                <img src="./img/L7.png" alt="">
+                <div class="title">魅族 Lipro LED 灯带</div>
+                <div class="con">博物馆级健康光 | 无可见频闪 | 柔性布光</div>
+                <div class="price"><i>￥</i>999</div>
+            </li>
+            <li class="goods">
+                <img src="./img/L8.png" alt="">
+                <div class="title">魅族 Lipro 驱动电源</div>
+                <div class="con">55W 输出功率 | 铝制金属外壳</div>
+                <div class="price"><i>￥</i>249</div>
+            </li>
+        </ul>
+        <div class="phone_title">
+            <h3>魅族声学</h3>
+        </div>
+    </div>
+
+    <!-- 魅族声学 -->
+    <div class="voice_adv"></div>
+    <div class="voice_det">
+        <ul>
+            <li class="head1"></li>
+            <li class="goods">
+                <img src="./img/voice_01.png" alt="">
+                <div class="title">魅族 POP Pro 主动降噪耳机</div>
+                <div class="con">三重混合主动降噪技术 | 三麦克风智能通话降噪</div>
+                <div class="price"><i>￥</i>499</div>
+            </li>
+            <li class="goods">
+                <img src="./img/voice_02.png" alt="">
+                <div class="title">魅族 POP Pro 主动降噪耳机</div>
+                <div class="con">三重混合主动降噪技术 | 三麦克风智能通话降噪</div>
+                <div class="price"><i>￥</i>499</div>
+            </li>
+            <li class="goods">
+                <img src="./img/voice_03.png" alt="">
+                <div class="title">魅族 POP Pro 主动降噪耳机</div>
+                <div class="con">三重混合主动降噪技术 | 三麦克风智能通话降噪</div>
+                <div class="price"><i>￥</i>499</div>
+            </li>
+
+            <li class="head2"></li>
+            <li class="goods">
+                <img src="./img/voice_04.png" alt="">
+                <div class="title">魅族 POP Pro 主动降噪耳机</div>
+                <div class="con">三重混合主动降噪技术 | 三麦克风智能通话降噪</div>
+                <div class="price"><i>￥</i>499</div>
+            </li>
+            <li class="goods">
+                <img src="./img/voice_05.png" alt="">
+                <div class="title">魅族 POP Pro 主动降噪耳机</div>
+                <div class="con">三重混合主动降噪技术 | 三麦克风智能通话降噪</div>
+                <div class="price"><i>￥</i>499</div>
+            </li>
+            <li class="goods">
+                <img src="./img/voice_06.png" alt="">
+                <div class="title">魅族 POP Pro 主动降噪耳机</div>
+                <div class="con">三重混合主动降噪技术 | 三麦克风智能通话降噪</div>
+                <div class="price"><i>￥</i>499</div>
+            </li>
+
+            <li class="head3"></li>
+            <li class="goods">
+                <img src="./img/voice_07.png" alt="">
+                <div class="title">魅族 POP Pro 主动降噪耳机</div>
+                <div class="con">三重混合主动降噪技术 | 三麦克风智能通话降噪</div>
+                <div class="price"><i>￥</i>499</div>
+            </li>
+            <li class="goods">
+                <img src="./img/voice_08.png" alt="">
+                <div class="title">魅族 POP Pro 主动降噪耳机</div>
+                <div class="con">三重混合主动降噪技术 | 三麦克风智能通话降噪</div>
+                <div class="price"><i>￥</i>499</div>
+            </li>
+            <li class="goods">
+                <img src="./img/voice_09.png" alt="">
+                <div class="title">魅族 POP Pro 主动降噪耳机</div>
+                <div class="con">三重混合主动降噪技术 | 三麦克风智能通话降噪</div>
+                <div class="price"><i>￥</i>499</div>
+            </li>
+        </ul>
+            <div class="phone_title">
+                <h3>智能配件</h3>
+            </div>
+    </div>
+
+    <!-- 智能配件 -->
+    <div class="parts_adv"></div>
+    <!-- 智能配件内容 -->
+    <div class="parts_det">
+        <ul>
+            <li class="head1"></li>
+            <li class="goods">
+                <img src="./img/parts_1.jpg" alt="">
+                <div class="title">魅族 POP Pro 主动降噪耳机</div>
+                <div class="con">三重混合主动降噪技术 | 三麦克风智能通话降噪</div>
+                <div class="price"><i>￥</i>499</div>
+            </li>
+            <li class="goods">
+                <img src="./img/parts_2.jpg" alt="">
+                <div class="title">魅族 POP Pro 主动降噪耳机</div>
+                <div class="con">三重混合主动降噪技术 | 三麦克风智能通话降噪</div>
+                <div class="price"><i>￥</i>499</div>
+            </li>
+            <li class="goods">
+                <img src="./img/parts_3.png" alt="">
+                <div class="title">魅族 POP Pro 主动降噪耳机</div>
+                <div class="con">三重混合主动降噪技术 | 三麦克风智能通话降噪</div>
+                <div class="price"><i>￥</i>499</div>
+            </li>
+
+            <li class="head2"></li>
+            <li class="goods">
+                <img src="./img/parts_4.png" alt="">
+                <div class="title">魅族 POP Pro 主动降噪耳机</div>
+                <div class="con">三重混合主动降噪技术 | 三麦克风智能通话降噪</div>
+                <div class="price"><i>￥</i>499</div>
+            </li>
+            <li class="goods">
+                <img src="./img/parts_5.png" alt="">
+                <div class="title">魅族 POP Pro 主动降噪耳机</div>
+                <div class="con">三重混合主动降噪技术 | 三麦克风智能通话降噪</div>
+                <div class="price"><i>￥</i>499</div>
+            </li>
+            <li class="goods">
+                <img src="./img/parts_6.png" alt="">
+                <div class="title">魅族 POP Pro 主动降噪耳机</div>
+                <div class="con">三重混合主动降噪技术 | 三麦克风智能通话降噪</div>
+                <div class="price"><i>￥</i>499</div>
+            </li>
+
+            <li class="head3"></li>
+            <li class="goods">
+                <img src="./img/parts_7.png" alt="">
+                <div class="title">魅族 POP Pro 主动降噪耳机</div>
+                <div class="con">三重混合主动降噪技术 | 三麦克风智能通话降噪</div>
+                <div class="price"><i>￥</i>499</div>
+            </li>
+            <li class="goods">
+                <img src="./img/parts_8.png" alt="">
+                <div class="title">魅族 POP Pro 主动降噪耳机</div>
+                <div class="con">三重混合主动降噪技术 | 三麦克风智能通话降噪</div>
+                <div class="price"><i>￥</i>499</div>
+            </li>
+            <li class="goods">
+                <img src="./img/parts_9.png" alt="">
+                <div class="title">魅族 POP Pro 主动降噪耳机</div>
+                <div class="con">三重混合主动降噪技术 | 三麦克风智能通话降噪</div>
+                <div class="price"><i>￥</i>499</div>
+            </li>
+        </ul>
+        <div class="phone_title">
+            <h3>生活周边</h3>
+        </div>
+    </div>
+
+    <!-- 生活 -->
+
+    <div class="life_adv"></div>
+    <!-- 生活内容 -->
+    <div class="life_det">
+        <ul>
+            <li class="head1"></li>
+            <li class="goods">
+                <img src="./img/life_1.jpg" alt="">
+                <div class="title">魅族 POP Pro 主动降噪耳机</div>
+                <div class="con">三重混合主动降噪技术 | 三麦克风智能通话降噪</div>
+                <div class="price"><i>￥</i>499</div>
+            </li>
+            <li class="goods">
+                <img src="./img/life_2.jpg" alt="">
+                <div class="title">魅族 POP Pro 主动降噪耳机</div>
+                <div class="con">三重混合主动降噪技术 | 三麦克风智能通话降噪</div>
+                <div class="price"><i>￥</i>499</div>
+            </li>
+            <li class="goods">
+                <img src="./img/life_3.jpg" alt="">
+                <div class="title">魅族 POP Pro 主动降噪耳机</div>
+                <div class="con">三重混合主动降噪技术 | 三麦克风智能通话降噪</div>
+                <div class="price"><i>￥</i>499</div>
+            </li>
+
+            <li class="head2"></li>
+            <li class="goods">
+                <img src="./img/life_4.jpg" alt="">
+                <div class="title">魅族 POP Pro 主动降噪耳机</div>
+                <div class="con">三重混合主动降噪技术 | 三麦克风智能通话降噪</div>
+                <div class="price"><i>￥</i>499</div>
+            </li>
+            <li class="goods">
+                <img src="./img/life_5.jpg" alt="">
+                <div class="title">魅族 POP Pro 主动降噪耳机</div>
+                <div class="con">三重混合主动降噪技术 | 三麦克风智能通话降噪</div>
+                <div class="price"><i>￥</i>499</div>
+            </li>
+            <li class="goods">
+                <img src="./img/life_6.jpg" alt="">
+                <div class="title">魅族 POP Pro 主动降噪耳机</div>
+                <div class="con">三重混合主动降噪技术 | 三麦克风智能通话降噪</div>
+                <div class="price"><i>￥</i>499</div>
+            </li>
+
+            <li class="head3"></li>
+            <li class="goods">
+                <img src="./img/life_7.jpg" alt="">
+                <div class="title">魅族 POP Pro 主动降噪耳机</div>
+                <div class="con">三重混合主动降噪技术 | 三麦克风智能通话降噪</div>
+                <div class="price"><i>￥</i>499</div>
+            </li>
+            <li class="goods">
+                <img src="./img/life_8.png" alt=""> 
+                <div class="title">魅族 POP Pro 主动降噪耳机</div>
+                <div class="con">三重混合主动降噪技术 | 三麦克风智能通话降噪</div>
+                <div class="price"><i>￥</i>499</div>
+            </li>
+            <li class="goods">
+                <img src="./img/life_9.jpg" alt="">
+                <div class="title">魅族 POP Pro 主动降噪耳机</div>
+                <div class="con">三重混合主动降噪技术 | 三麦克风智能通话降噪</div>
+                <div class="price"><i>￥</i>499</div>
+            </li>
+        </ul>
+        <div class="phone_title">
+            <h3>社区热帖</h3>
+        </div>
+    </div>
+    <!-- /* 社区 */ -->
+    <div class="comount">
+        <ul>
+            <li class="shadow">
+                <img src="./img/con1.jpg" alt="">
+                <svg t="1615446355115" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1547" width="48" height="48"><path d="M512 32a480 480 0 1 0 0 960 480 480 0 0 0 0-960z m-3.072 168.192a144.64 144.64 0 1 1 0 289.28 144.64 144.64 0 0 1 0-289.28zM256 774.144c-1.472-148.224 70.976-240.256 161.792-276.416l93.248 155.584 98.24-152c87.616 38.4 157.248 129.344 158.656 272.96-161.088 63.872-330.88 68.48-511.936-0.128z" p-id="1548"></path></svg>
+                <span>卡哇格博journey</span>
+                <div class="text">魅族 17Pro | 灯火辉煌上海滩</div>
+                <div class="phone">魅族 17Pro</div>
+            </li>
+            <li class="shadow">
+                <img src="./img/con2.jpg" alt="">
+                <svg t="1615446355115" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1547" width="48" height="48"><path d="M512 32a480 480 0 1 0 0 960 480 480 0 0 0 0-960z m-3.072 168.192a144.64 144.64 0 1 1 0 289.28 144.64 144.64 0 0 1 0-289.28zM256 774.144c-1.472-148.224 70.976-240.256 161.792-276.416l93.248 155.584 98.24-152c87.616 38.4 157.248 129.344 158.656 272.96-161.088 63.872-330.88 68.48-511.936-0.128z" p-id="1548"></path></svg>
+                <span>卡哇格博journey</span>
+                <div class="text">魅族 17Pro | 灯火辉煌上海滩</div>
+                <div class="phone">魅族 17Pro</div>
+            </li>
+            <li class="shadow">
+                <img src="./img/con3.jpg" alt="">
+                <svg t="1615446355115" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1547" width="48" height="48"><path d="M512 32a480 480 0 1 0 0 960 480 480 0 0 0 0-960z m-3.072 168.192a144.64 144.64 0 1 1 0 289.28 144.64 144.64 0 0 1 0-289.28zM256 774.144c-1.472-148.224 70.976-240.256 161.792-276.416l93.248 155.584 98.24-152c87.616 38.4 157.248 129.344 158.656 272.96-161.088 63.872-330.88 68.48-511.936-0.128z" p-id="1548"></path></svg>
+                <span>卡哇格博journey</span>
+                <div class="text">魅族 17Pro | 灯火辉煌上海滩</div>
+                <div class="phone">魅族 17Pro</div>
+            </li>
+            <li class="shadow">
+                <img src="./img/con4.jpg" alt="">
+                <svg t="1615446355115" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1547" width="48" height="48"><path d="M512 32a480 480 0 1 0 0 960 480 480 0 0 0 0-960z m-3.072 168.192a144.64 144.64 0 1 1 0 289.28 144.64 144.64 0 0 1 0-289.28zM256 774.144c-1.472-148.224 70.976-240.256 161.792-276.416l93.248 155.584 98.24-152c87.616 38.4 157.248 129.344 158.656 272.96-161.088 63.872-330.88 68.48-511.936-0.128z" p-id="1548"></path></svg>
+                <span>卡哇格博journey</span>
+                <div class="text">魅族 17Pro | 灯火辉煌上海滩</div>
+                <div class="phone">魅族 17Pro</div>
+            </li>
+            <li class="shadow">
+                <img src="./img/con5.jpg" alt="">
+                <svg t="1615446355115" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1547" width="48" height="48"><path d="M512 32a480 480 0 1 0 0 960 480 480 0 0 0 0-960z m-3.072 168.192a144.64 144.64 0 1 1 0 289.28 144.64 144.64 0 0 1 0-289.28zM256 774.144c-1.472-148.224 70.976-240.256 161.792-276.416l93.248 155.584 98.24-152c87.616 38.4 157.248 129.344 158.656 272.96-161.088 63.872-330.88 68.48-511.936-0.128z" p-id="1548"></path></svg>
+                <span>卡哇格博journey</span>
+                <div class="text">魅族 17Pro | 灯火辉煌上海滩</div>
+                <div class="phone">魅族 17Pro</div>
+            </li>
+            <li class="shadow">
+                <img src="./img/con6.jpg" alt="">
+                <svg t="1615446355115" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1547" width="48" height="48"><path d="M512 32a480 480 0 1 0 0 960 480 480 0 0 0 0-960z m-3.072 168.192a144.64 144.64 0 1 1 0 289.28 144.64 144.64 0 0 1 0-289.28zM256 774.144c-1.472-148.224 70.976-240.256 161.792-276.416l93.248 155.584 98.24-152c87.616 38.4 157.248 129.344 158.656 272.96-161.088 63.872-330.88 68.48-511.936-0.128z" p-id="1548"></path></svg>
+                <span>卡哇格博journey</span>
+                <div class="text">魅族 17Pro | 灯火辉煌上海滩</div>
+                <div class="phone">魅族 17Pro</div>
+            </li>
+            <li class="shadow">
+                <img src="./img/con7.jpg" alt="">
+                <svg t="1615446355115" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1547" width="48" height="48"><path d="M512 32a480 480 0 1 0 0 960 480 480 0 0 0 0-960z m-3.072 168.192a144.64 144.64 0 1 1 0 289.28 144.64 144.64 0 0 1 0-289.28zM256 774.144c-1.472-148.224 70.976-240.256 161.792-276.416l93.248 155.584 98.24-152c87.616 38.4 157.248 129.344 158.656 272.96-161.088 63.872-330.88 68.48-511.936-0.128z" p-id="1548"></path></svg>
+                <span>卡哇格博journey</span>
+                <div class="text">魅族 17Pro | 灯火辉煌上海滩</div>
+                <div class="phone">魅族 17Pro</div>
+            </li>
+            <li class="shadow">
+                <img src="./img/con8.jpg" alt="">
+
+                <svg t="1615446355115" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1547" width="48" height="48"><path d="M512 32a480 480 0 1 0 0 960 480 480 0 0 0 0-960z m-3.072 168.192a144.64 144.64 0 1 1 0 289.28 144.64 144.64 0 0 1 0-289.28zM256 774.144c-1.472-148.224 70.976-240.256 161.792-276.416l93.248 155.584 98.24-152c87.616 38.4 157.248 129.344 158.656 272.96-161.088 63.872-330.88 68.48-511.936-0.128z" p-id="1548"></path></svg>
+                <span>卡哇格博journey</span>
+                <div class="text">魅族 17Pro | 灯火辉煌上海滩</div>
+                <div class="phone">魅族 17Pro</div>
+            </li>
+        </ul>
+        <div class="phone_title">
+            <h3>Flyme</h3>
+        </div>
+    </div>
+
+    <!-- Flyme -->
+    <div class="Flyme">
+        <ul>
+            <li class="big_img shadow">
+                <img src="./img/Flyme1.png" alt="">
+            </li>
+            <li class="small_img shadow">
+                <img src="./img/Flyme2.jpg" alt="">
+                <p>跨越使用小障碍</p>
+            </li>
+            <li class="small_img shadow">
+                <img src="./img/Flyme3.png" alt="">
+                <p>全新导入滤镜</p>
+            </li>
+            <li class="small_img shadow">
+                <img src="./img/Flyme4.png" alt="">
+                <p>全面提升续航能力</p>
+            </li>
+            <li class="small_img shadow">
+                <img src="./img/Flyme5.jpg" alt="">
+                <p>不得不知的小功能</p>
+            </li>
+            <li class="small_img shadow">
+                <img src="./img/Flyme6.jpg" alt="">
+                <p>快速挽救手机数据</p>
+            </li>
+            <li class="small_img shadow">
+                <img src="./img/Flyme7.jpg" alt="">
+                <p>全局振感，指尖回响</p>
+            </li>
+        </ul>
+        <div class="phone_title">
+            <h3>精彩视频</h3>
+        </div>
+    </div>
+    <!-- 精彩视频 -->
+    <div class="Video">
+        <ul>
+            <li class="small_img shadow">
+                <svg t="1615450267378" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2709" width="48" height="48"><path d="M512 0a512 512 0 1 0 512 512 512 512 0 0 0-512-512z m0 969.984a459.008 459.008 0 1 1 459.008-459.008A459.008 459.008 0 0 1 512 969.984z" p-id="2710" fill="#ffffff"></path><path d="M776.64 487.36L409.536 275.776a35.264 35.264 0 0 0-18.688-4.928 37.76 37.76 0 0 0-37.376 37.376v423.168a37.376 37.376 0 0 0 37.76 37.76 35.264 35.264 0 0 0 18.688-4.928l367.104-211.584a37.76 37.76 0 0 0-0.32-65.216z m-368.832 216.896V336.064l319.104 184.064z" p-id="2711" fill="#ffffff"></path></svg>
+                <img src="./img/video1.jpg" alt="">
+                <p>魅族 18 Pro</p>
+            </li>
+            <li class="small_img shadow">
+                <svg t="1615450267378" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2709" width="48" height="48"><path d="M512 0a512 512 0 1 0 512 512 512 512 0 0 0-512-512z m0 969.984a459.008 459.008 0 1 1 459.008-459.008A459.008 459.008 0 0 1 512 969.984z" p-id="2710" fill="#ffffff"></path><path d="M776.64 487.36L409.536 275.776a35.264 35.264 0 0 0-18.688-4.928 37.76 37.76 0 0 0-37.376 37.376v423.168a37.376 37.376 0 0 0 37.76 37.76 35.264 35.264 0 0 0 18.688-4.928l367.104-211.584a37.76 37.76 0 0 0-0.32-65.216z m-368.832 216.896V336.064l319.104 184.064z" p-id="2711" fill="#ffffff"></path></svg>
+                <img src="./img/video2.jpg" alt="">
+                <p>魅族 18</p>
+            </li>
+            <li class="small_img shadow">
+                <svg t="1615450267378" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2709" width="48" height="48"><path d="M512 0a512 512 0 1 0 512 512 512 512 0 0 0-512-512z m0 969.984a459.008 459.008 0 1 1 459.008-459.008A459.008 459.008 0 0 1 512 969.984z" p-id="2710" fill="#ffffff"></path><path d="M776.64 487.36L409.536 275.776a35.264 35.264 0 0 0-18.688-4.928 37.76 37.76 0 0 0-37.376 37.376v423.168a37.376 37.376 0 0 0 37.76 37.76 35.264 35.264 0 0 0 18.688-4.928l367.104-211.584a37.76 37.76 0 0 0-0.32-65.216z m-368.832 216.896V336.064l319.104 184.064z" p-id="2711" fill="#ffffff"></path></svg>
+
+                <img src="./img/video3.jpg" alt="">
+                <p>这18年</p>
+            </li>
+            <li class="small_img shadow">
+                <svg t="1615450267378" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2709" width="48" height="48"><path d="M512 0a512 512 0 1 0 512 512 512 512 0 0 0-512-512z m0 969.984a459.008 459.008 0 1 1 459.008-459.008A459.008 459.008 0 0 1 512 969.984z" p-id="2710" fill="#ffffff"></path><path d="M776.64 487.36L409.536 275.776a35.264 35.264 0 0 0-18.688-4.928 37.76 37.76 0 0 0-37.376 37.376v423.168a37.376 37.376 0 0 0 37.76 37.76 35.264 35.264 0 0 0 18.688-4.928l367.104-211.584a37.76 37.76 0 0 0-0.32-65.216z m-368.832 216.896V336.064l319.104 184.064z" p-id="2711" fill="#ffffff"></path></svg>
+
+                <img src="./img/video4.jpg" alt="">
+                <p>Lipro智能家居</p>
+            </li>
+            <li class="small_img shadow">
+                <svg t="1615450267378" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2709" width="48" height="48"><path d="M512 0a512 512 0 1 0 512 512 512 512 0 0 0-512-512z m0 969.984a459.008 459.008 0 1 1 459.008-459.008A459.008 459.008 0 0 1 512 969.984z" p-id="2710" fill="#ffffff"></path><path d="M776.64 487.36L409.536 275.776a35.264 35.264 0 0 0-18.688-4.928 37.76 37.76 0 0 0-37.376 37.376v423.168a37.376 37.376 0 0 0 37.76 37.76 35.264 35.264 0 0 0 18.688-4.928l367.104-211.584a37.76 37.76 0 0 0-0.32-65.216z m-368.832 216.896V336.064l319.104 184.064z" p-id="2711" fill="#ffffff"></path></svg>
+
+                <img src="./img/video5.jpg" alt="">
+                <p>Flyme 8 概念视频</p>
+            </li>
+            <li class="small_img shadow">
+                <svg t="1615450267378" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2709" width="48" height="48"><path d="M512 0a512 512 0 1 0 512 512 512 512 0 0 0-512-512z m0 969.984a459.008 459.008 0 1 1 459.008-459.008A459.008 459.008 0 0 1 512 969.984z" p-id="2710" fill="#ffffff"></path><path d="M776.64 487.36L409.536 275.776a35.264 35.264 0 0 0-18.688-4.928 37.76 37.76 0 0 0-37.376 37.376v423.168a37.376 37.376 0 0 0 37.76 37.76 35.264 35.264 0 0 0 18.688-4.928l367.104-211.584a37.76 37.76 0 0 0-0.32-65.216z m-368.832 216.896V336.064l319.104 184.064z" p-id="2711" fill="#ffffff"></path></svg>
+
+                <img src="./img/video6.jpg" alt="">
+                <p>Flyme 8 功能视频</p>
+            </li>
+            <li class="small_img shadow">
+                <svg t="1615450267378" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2709" width="48" height="48"><path d="M512 0a512 512 0 1 0 512 512 512 512 0 0 0-512-512z m0 969.984a459.008 459.008 0 1 1 459.008-459.008A459.008 459.008 0 0 1 512 969.984z" p-id="2710" fill="#ffffff"></path><path d="M776.64 487.36L409.536 275.776a35.264 35.264 0 0 0-18.688-4.928 37.76 37.76 0 0 0-37.376 37.376v423.168a37.376 37.376 0 0 0 37.76 37.76 35.264 35.264 0 0 0 18.688-4.928l367.104-211.584a37.76 37.76 0 0 0-0.32-65.216z m-368.832 216.896V336.064l319.104 184.064z" p-id="2711" fill="#ffffff"></path></svg>
+
+                <img src="./img/video7.jpg" alt="">
+                <p>Aicy</p>
+            </li>
+            <li class="small_img shadow">
+                <svg t="1615450267378" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2709" width="48" height="48"><path d="M512 0a512 512 0 1 0 512 512 512 512 0 0 0-512-512z m0 969.984a459.008 459.008 0 1 1 459.008-459.008A459.008 459.008 0 0 1 512 969.984z" p-id="2710" fill="#ffffff"></path><path d="M776.64 487.36L409.536 275.776a35.264 35.264 0 0 0-18.688-4.928 37.76 37.76 0 0 0-37.376 37.376v423.168a37.376 37.376 0 0 0 37.76 37.76 35.264 35.264 0 0 0 18.688-4.928l367.104-211.584a37.76 37.76 0 0 0-0.32-65.216z m-368.832 216.896V336.064l319.104 184.064z" p-id="2711" fill="#ffffff"></path></svg>
+
+                <img src="./img/video8.jpg" alt="">
+                <p>安全家庭</p>
+            </li>
+        </ul>
+        <div class="phone_title">
+            <h3></h3>
+        </div>
+    </div>
+
+    <div class="bottom">
+        <div class="box">
+            <div class="bottom_list">
+                <ul>
+                    <li>
+                        <img src="./img/but1.png" alt="">
+                        <p>满30免运费</p>
+                    </li>
+                    <li>
+                        <img src="./img/but2.png" alt="">
+                        <p>满30免运费</p>
+                    </li>
+                    <li>
+                        <img src="./img/but3.png" alt="">
+                        <p>满30免运费</p>
+                    </li>
+                    <li>
+                        <img src="./img/but4.png" alt="">
+                        <p>满30免运费</p>
+                    </li>
+                    <li>
+                        <img src="./img/but5.png" alt="">
+                        <p>满30免运费</p>
+                    </li>
+                    <li>
+                        <img src="./img/but6.png" alt="">
+                        <p>满30免运费</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bottom_right">
+                <div class="time">
+                    周一至周五 8:00-20:00
+                </div>
+                <div class="number">
+                    <b>400-788-3333</b>
+                </div>
+                <div class="kefu">
+                    在线客服
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ins">
+        <ul>
+            <li>了解魅族</li><i>|</i>
+            <li>加入我们</li><i>|</i>
+            <li>联系我们</li><i>|</i>
+            <li>Flyme</li><i>|</i>
+            <li>魅族社区</li><i>|</i>
+            <li>天猫旗舰店</li><i>|</i>
+            <li>问题反馈</li><i>|</i>
+            <li>线上销售授权名单公示</li><i>|</i>
+            <li>出版物经营许可证</li><i>|</i>
+            <li>简体中文</li>
+        </ul>
+        <p>
+            ©2020 Meizu Telecom Equipment Co., Ltd. All rights reserved.    粤ICP备13003602号合字B2-20170010 营业执照法律声明粤公网安备 44049102496009 号
+        </p>
+    </div>
+</body>
+</html>
