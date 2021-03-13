@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/reset.css">
+<body>
+    <!-- 顶部导航栏 -->
+    <div class="header">
+        <div class="nav">
+            <div class="nav_left">
+                <a href="javascript:;">小米商城</a><i>|</i>
+                <a href="javascript:;">MIUI</a><i>|</i>
+                <a href="javascript:;">LoT</a><i>|</i>
+                <a href="javascript:;">云服务</a><i>|</i>
+                <a href="javascript:;">天星数科</a><i>|</i>
+                <a href="javascript:;">有品</a><i>|</i>
+                <a href="javascript:;">天星数科</a><i>|</i>
+                <a href="javascript:;">小爱开放平台</a><i>|</i>
+                <a href="javascript:;">企业团购</a><i>|</i>
+                <a href="javascript:;">协议规则</a><i>|</i>
+                <a href="javascript:;">下载app</a><i>|</i>
+                <a href="javascript:;">智能生活</a><i>|</i>
+                <a href="javascript:;">Select Location</a>
+            </div>
+
+            <div class="nav_right">
+                <div class="shopCar">
+                    <a href="javascript:;">
+                        <svg t="1615516015880" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3050" width="32" height="32"><path d="M960.151 224.532l-593.973-25.837c-16.951-0.838-31.318 12.523-32.014 29.644-0.741 17.119 12.428 31.583 29.379 32.325l553.773 24.086-108.897 342.876h-484.576l-87.515-481.078c-1.916-10.535-9.099-19.371-18.988-23.274l-143.399-56.842c-15.803-6.25-33.617 1.581-39.819 17.503-6.201 15.97 1.581 33.977 17.383 40.227l127.453 50.522 89.093 489.555c2.681 14.702 15.396 25.403 30.24 25.403h14.774l-33.737 94.602c-2.85 7.924-1.675 16.736 3.113 23.633 4.789 6.874 12.595 10.966 20.951 10.966h23.655c-14.655 16.473-23.655 38.213-23.655 62.038 0 51.286 41.353 93.021 92.159 93.021 50.832 0 92.183-41.732 92.183-93.021 0-23.824-9.004-45.54-23.655-62.038h200.961c-14.629 16.473-23.655 38.213-23.655 62.038 0 51.286 41.375 93.021 92.183 93.021 50.81 0 92.159-41.732 92.159-93.021 0-23.824-9.004-45.54-23.655-62.038h28.829c14.128 0 25.548-11.565 25.548-25.837s-11.445-25.837-25.548-25.837h-491.088l27.654-77.506h463.361c13.361 0 25.166-8.691 29.235-21.55l128.003-403.118c2.919-9.218 1.436-19.275-4.046-27.223-5.482-7.925-14.294-12.858-23.872-13.242zM733.524 839.528c22.578 0 40.944 18.556 40.944 41.326 0 22.817-18.365 41.375-40.944 41.375s-40.967-18.532-40.967-41.375c0-22.746 18.388-41.326 40.967-41.326zM395.556 839.528c22.579 0 40.967 18.556 40.967 41.326 0 22.817-18.388 41.375-40.967 41.375-22.556 0-40.944-18.532-40.944-41.375 0.001-22.746 18.39-41.326 40.944-41.326z" p-id="3051" fill="#b0b0b0"></path></svg>
+                        <span .car>购物车 (0)</span> 
+                       <div class="box_list">
+                            <p>购物车中还没有商品，赶紧选购吧！</p> 
+                       </div>
+                    </a>
+                </div>
+                <div class="login_nav">
+                    <a href="javascript:;">登录</a><i>|</i>
+                    <a href="javascript:;">注册</a><i>|</i>
+                    <a href="javascript:;">消息通知</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- /* 搜索商品区域 */ -->
+    <div class="search_goods">
+       <div class="log">
+            <a href="javascript:;"></a>
+       </div>
+       
+       <div class="goodList">
+           <ul>
+               <li>小米手机</li>
+               <li>Readmi手机</li>
+               <li>电视</li>
+               <li>笔记本</li>
+               <li>家电</li>
+               <li>路由器</li>
+               <li>智能硬件</li>
+               <li>服务</li>
+               <li>社区</li>
+           </ul>
+       </div>
+
+       <div class="search">
+           <div class="search_text">
+                <input type="text" placeholder="智能">
+           </div>
+           <div class="search_log">
+                <svg t="1615624728013" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="936" width="32" height="32"><path d="M664.506 715.55c-127.965 102.627-315.384 94.605-434.055-24.066-127.275-127.274-127.275-333.627 0-460.901 127.274-127.274 333.627-127.274 460.901 0 118.67 118.67 126.693 306.09 24.066 434.055l134.37 134.37c14.058 14.059 14.058 36.852 0 50.911-14.06 14.06-36.854 14.06-50.913 0L664.506 715.55z m-18.409-69.32c102.281-102.281 102.281-268.111 0-370.392-102.28-102.281-268.11-102.281-370.391 0-102.281 102.28-102.281 268.11 0 370.391 102.28 102.281 268.11 102.281 370.391 0z" fill="#333333" p-id="937"></path></svg>
+           </div>
+       </div>
+    </div>
+<!-- 拉出栏的小列表 -->
+    <div class="good_list_img">
+        <ul class="left_list">
+            <li class="list l1">
+                <span>手机 电话卡</span>
+                <i></i>
+                <div class="child">
+                    <ul>
+                        <li>
+                            <img src="./img/iphon.jpg" alt="">
+                            <span>小米手机</span>
+                        </li>
+                        <li>
+                            <img src="./img/iphone (1).webp" alt="">
+                            <span>小米手机</span>
+                        </li> 
+                        <li>
+                            <img src="./img/iphone (2).webp" alt="">
+                            <span>小米手机</span>
+                        </li>
+                        <li>
+                            <img src="./img/iphone (3).webp" alt="">
+                            <span>小米手机</span>
+                        </li>
+                        <li>
+                            <img src="./img/iphone (4).webp" alt="">
+                            <span>小米手机</span>
+                        </li>
+                        <li>
+                            <img src="./img/iphone (5).webp" alt="">
+                            <span>小米手机</span>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <img src="./img/iphon.jpg" alt="">
+                            <span>小米手机</span>
+                        </li>
+                        <li>
+                            <img src="./img/iphone (1).webp" alt="">
+                            <span>小米手机</span>
+                        </li> 
+                        <li>
+                            <img src="./img/iphone (2).webp" alt="">
+                            <span>小米手机</span>
+                        </li>
+                        <li>
+                            <img src="./img/iphone (3).webp" alt="">
+                            <span>小米手机</span>
+                        </li>
+                        <li>
+                            <img src="./img/iphone (4).webp" alt="">
+                            <span>小米手机</span>
+                        </li>
+                        <li>
+                            <img src="./img/iphone (5).webp" alt="">
+                            <span>小米手机</span>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <img src="./img/iphon.jpg" alt="">
+                            <span>小米手机</span>
+                        </li>
+                        <li>
+                            <img src="./img/iphone (1).webp" alt="">
+                            <span>小米手机</span>
+                        </li> 
+                        <li>
+                            <img src="./img/iphone (2).webp" alt="">
+                            <span>小米手机</span>
+                        </li>
+                        <li>
+                            <img src="./img/iphone (3).webp" alt="">
+                            <span>小米手机</span>
+                        </li>
+                        <li>
+                            <img src="./img/iphone (4).webp" alt="">
+                            <span>小米手机</span>
+                        </li>
+                        <li>
+                            <img src="./img/iphone (5).webp" alt="">
+                            <span>小米手机</span>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="list">
+               <span>电视 盒子</span>
+               <i></i>
+               <div class="child">
+                <ul>
+                    <li>
+                        <img src="./img/iphone (7).webp" alt="">
+                        <span>小米手机</span>
+                    </li>
+                    <li>
+                        <img src="./img/iphone (6).webp" alt="">
+                        <span>小米手机</span>
+                    </li> 
+                    <li>
+                        <img src="./img/iphone (8).webp" alt="">
+                        <span>小米手机</span>
+                    </li>
+                    <li>
+                        <img src="./img/iphone (9).webp" alt="">
+                        <span>小米手机</span>
+                    </li>
+                    <li>
+                        <img src="./img/iphone (8).webp" alt="">
+                        <span>小米手机</span>
+                    </li>
+                    <li>
+                        <img src="./img/iphone (10).webp alt="">
+                        <span>小米手机</span>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <img src="./img/iphon.jpg" alt="">
+                        <span>小米手机</span>
+                    </li>
+                    <li>
+                        <img src="./img/iphone (1).webp" alt="">
+                        <span>小米手机</span>
+                    </li> 
+                    <li>
+                        <img src="./img/iphone (2).webp" alt="">
+                        <span>小米手机</span>
+                    </li>
+                    <li>
+                        <img src="./img/iphone (3).webp" alt="">
+                        <span>小米手机</span>
+                    </li>
+                    <li>
+                        <img src="./img/iphone (4).webp" alt="">
+                        <span>小米手机</span>
+                    </li>
+                    <li>
+                        <img src="./img/iphone (5).webp" alt="">
+                        <span>小米手机</span>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <img src="./img/iphon.jpg" alt="">
+                        <span>小米手机</span>
+                    </li>
+                    <li>
+                        <img src="./img/iphone (1).webp" alt="">
+                        <span>小米手机</span>
+                    </li> 
+                    <li>
+                        <img src="./img/iphone (2).webp" alt="">
+                        <span>小米手机</span>
+                    </li>
+                    <li>
+                        <img src="./img/iphone (3).webp" alt="">
+                        <span>小米手机</span>
+                    </li>
+                    <li>
+                        <img src="./img/iphone (4).webp" alt="">
+                        <span>小米手机</span>
+                    </li>
+                    <li>
+                        <img src="./img/iphone (5).webp" alt="">
+                        <span>小米手机</span>
+                    </li>
+                </ul>
+            </div>
+            </li>
+            <li class="list">
+                <span>笔记本 显示器</span>
+                <i></i> 
+                <div class="child">
+                    <ul>
+                        <li>
+                            <img src="./img/iphon.jpg" alt="">
+                            <span>小米手机</span>
+                        </li>
+                        <li>
+                            <img src="./img/iphone (1).webp" alt="">
+                            <span>小米手机</span>
+                        </li> 
+                        <li>
+                            <img src="./img/iphone (2).webp" alt="">
+                            <span>小米手机</span>
+                        </li>
+                        <li>
+                            <img src="./img/iphone (3).webp" alt="">
+                            <span>小米手机</span>
+                        </li>
+                        <li>
+                            <img src="./img/iphone (4).webp" alt="">
+                            <span>小米手机</span>
+                        </li>
+                        <li>
+                            <img src="./img/iphone (5).webp" alt="">
+                            <span>小米手机</span>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <img src="./img/iphon.jpg" alt="">
+                            <span>小米手机</span>
+                        </li>
+                        <li>
+                            <img src="./img/iphone (1).webp" alt="">
+                            <span>小米手机</span>
+                        </li> 
+                        <li>
+                            <img src="./img/iphone (2).webp" alt="">
+                            <span>小米手机</span>
+                        </li>
+                        <li>
+                            <img src="./img/iphone (3).webp" alt="">
+                            <span>小米手机</span>
+                        </li>
+                        <li>
+                            <img src="./img/iphone (4).webp" alt="">
+                            <span>小米手机</span>
+                        </li>
+                        <li>
+                            <img src="./img/iphone (5).webp" alt="">
+                            <span>小米手机</span>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <img src="./img/iphon.jpg" alt="">
+                            <span>小米手机</span>
+                        </li>
+                        <li>
+                            <img src="./img/iphone (1).webp" alt="">
+                            <span>小米手机</span>
+                        </li> 
+                        <li>
+                            <img src="./img/iphone (2).webp" alt="">
+                            <span>小米手机</span>
+                        </li>
+                        <li>
+                            <img src="./img/iphone (3).webp" alt="">
+                            <span>小米手机</span>
+                        </li>
+                        <li>
+                            <img src="./img/iphone (4).webp" alt="">
+                            <span>小米手机</span>
+                        </li>
+                        <li>
+                            <img src="./img/iphone (5).webp" alt="">
+                            <span>小米手机</span>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="list">
+                <span>家电 插线板</span>
+                <i></i>
+                <div class="child">
+                    <ul>
+                        <li>
+                            <img src="./img/iphon.jpg" alt="">
+                            <span>小米手机</span>
+                        </li>
+                        <li>
+                            <img src="./img/iphon.jpg" alt="">
+                            <span>小米手机</span>
+                        </li> 
+                        <li>
+                            <img src="./img/iphon.jpg" alt="">
+                            <span>小米手机</span>
+                        </li>
+                        <li>
+                            <img src="./img/iphon.jpg" alt="">
+                            <span>小米手机</span>
+                        </li>
+                        <li>
+                            <img src="./img/iphon.jpg" alt="">
+                            <span>小米手机</span>
+                        </li>
+                        <li>
+                            <img src="./img/iphon.jpg" alt="">
+                            <span>小米手机</span>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <img src="./img/iphon.jpg" alt="">
+                            <span>小米手机</span>
+                        </li>
+                        <li>
+                            <img src="./img/iphone (1).webp" alt="">
+                            <span>小米手机</span>
+                        </li> 
+                        <li>
+                            <img src="./img/iphone (2).webp" alt="">
+                            <span>小米手机</span>
+                        </li>
+                        <li>
+                            <img src="./img/iphone (3).webp" alt="">
+                            <span>小米手机</span>
+                        </li>
+                        <li>
+                            <img src="./img/iphone (4).webp" alt="">
+                            <span>小米手机</span>
+                        </li>
+                        <li>
+                            <img src="./img/iphone (5).webp" alt="">
+                            <span>小米手机</span>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <img src="./img/iphon.jpg" alt="">
+                            <span>小米手机</span>
+                        </li>
+                        <li>
+                            <img src="./img/iphone (1).webp" alt="">
+                            <span>小米手机</span>
+                        </li> 
+                        <li>
+                            <img src="./img/iphone (2).webp" alt="">
+                            <span>小米手机</span>
+                        </li>
+                        <li>
+                            <img src="./img/iphone (3).webp" alt="">
+                            <span>小米手机</span>
+                        </li>
+                        <li>
+                            <img src="./img/iphone (4).webp" alt="">
+                            <span>小米手机</span>
+                        </li>
+                        <li>
+                            <img src="./img/iphone (5).webp" alt="">
+                            <span>小米手机</span>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="list">
+                <span>出行 穿戴</span>
+                <i></i>
+                <div class="child">
+                    <ul>
+                        <li>
+                            <img src="./img/iphon.jpg" alt="">
+                            <span>小米手机</span>
+                        </li>
+                        <li>
+                            <img src="./img/iphone (1).webp" alt="">
+                            <span>小米手机</span>
+                        </li> 
+                        <li>
+                            <img src="./img/iphone (2).webp" alt="">
+                            <span>小米手机</span>
+                        </li>
+                        <li>
+                            <img src="./img/iphone (3).webp" alt="">
+                            <span>小米手机</span>
+                        </li>
+                        <li>
+                            <img src="./img/iphone (4).webp" alt="">
+                            <span>小米手机</span>
+                        </li>
+                        <li>
+                            <img src="./img/iphone (5).webp" alt="">
+                            <span>小米手机</span>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <img src="./img/iphon.jpg" alt="">
+                            <span>小米手机</span>
+                        </li>
+                        <li>
+                            <img src="./img/iphone (1).webp" alt="">
+                            <span>小米手机</span>
+                        </li> 
+                        <li>
+                            <img src="./img/iphone (2).webp" alt="">
+                            <span>小米手机</span>
+                        </li>
+                        <li>
+                            <img src="./img/iphone (3).webp" alt="">
+                            <span>小米手机</span>
+                        </li>
+                        <li>
+                            <img src="./img/iphone (4).webp" alt="">
+                            <span>小米手机</span>
+                        </li>
+                        <li>
+                            <img src="./img/iphone (5).webp" alt="">
+                            <span>小米手机</span>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <img src="./img/iphon.jpg" alt="">
+                            <span>小米手机</span>
+                        </li>
+                        <li>
+                            <img src="./img/iphone (1).webp" alt="">
+                            <span>小米手机</span>
+                        </li> 
+                        <li>
+                            <img src="./img/iphone (2).webp" alt="">
+                            <span>小米手机</span>
+                        </li>
+                        <li>
+                            <img src="./img/iphone (3).webp" alt="">
+                            <span>小米手机</span>
+                        </li>
+                        <li>
+                            <img src="./img/iphone (4).webp" alt="">
+                            <span>小米手机</span>
+                        </li>
+                        <li>
+                            <img src="./img/iphone (5).webp" alt="">
+                            <span>小米手机</span>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="list">
+                <span>智能 路由器</span>
+                <i></i>
+                <div class="child">
+                    <ul>
+                        <li>
+                            <img src="./img/iphon.jpg" alt="">
+                            <span>小米手机</span>
+                        </li>
+                        <li>
+                            <img src="./img/iphon.jpg" alt="">
+                            <span>小米手机</span>
+                        </li> 
+                        <li>
+                            <img src="./img/iphon.jpg" alt="">
+                            <span>小米手机</span>
+                        </li>
+                        <li>
+                            <img src="./img/iphon.jpg" alt="">
+                            <span>小米手机</span>
+                        </li>
+                        <li>
+                            <img src="./img/iphon.jpg" alt="">
+                            <span>小米手机</span>
+                        </li>
+                        <li>
+                            <img src="./img/iphon.jpg" alt="">
+                            <span>小米手机</span>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="list">
+                <span>电源 配件</span>
+                <i></i>
+                <div class="child">
+                    <ul>
+                        <li>
+                            <img src="./img/iphon.jpg" alt="">
+                            <span>小米手机</span>
+                        </li>
+                        <li>
+                            <img src="./img/iphone (1).webp" alt="">
+                            <span>小米手机</span>
+                        </li> 
+                        <li>
+                            <img src="./img/iphone (2).webp" alt="">
+                            <span>小米手机</span>
+                        </li>
+                        <li>
+                            <img src="./img/iphone (3).webp" alt="">
+                            <span>小米手机</span>
+                        </li>
+                        <li>
+                            <img src="./img/iphone (4).webp" alt="">
+                            <span>小米手机</span>
+                        </li>
+                        <li>
+                            <img src="./img/iphone (5).webp" alt="">
+                            <span>小米手机</span>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="list">
+                <span>健康 儿童</span>
+                <i></i>
+                <div class="child">
+                    <ul>
+                        <li>
+                            <img src="./img/iphon.jpg" alt="">
+                            <span>小米手机</span>
+                        </li>
+                        <li>
+                            <img src="./img/iphon.jpg" alt="">
+                            <span>小米手机</span>
+                        </li> 
+                        <li>
+                            <img src="./img/iphon.jpg" alt="">
+                            <span>小米手机</span>
+                        </li>
+                        <li>
+                            <img src="./img/iphon.jpg" alt="">
+                            <span>小米手机</span>
+                        </li>
+                        <li>
+                            <img src="./img/iphon.jpg" alt="">
+                            <span>小米手机</span>
+                        </li>
+                        <li>
+                            <img src="./img/iphon.jpg" alt="">
+                            <span>小米手机</span>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="list">
+                <span>耳机 音响</span>
+                <i></i>
+                <div class="child">
+                    <ul>
+                        <li>
+                            <img src="./img/iphon.jpg" alt="">
+                            <span>小米手机</span>
+                        </li>
+                        <li>
+                            <img src="./img/iphon.jpg" alt="">
+                            <span>小米手机</span>
+                        </li> 
+                        <li>
+                            <img src="./img/iphon.jpg" alt="">
+                            <span>小米手机</span>
+                        </li>
+                        <li>
+                            <img src="./img/iphon.jpg" alt="">
+                            <span>小米手机</span>
+                        </li>
+                        <li>
+                            <img src="./img/iphon.jpg" alt="">
+                            <span>小米手机</span>
+                        </li>
+                        <li>
+                            <img src="./img/iphon.jpg" alt="">
+                            <span>小米手机</span>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="list">
+                <span>生活 箱包</span>
+                <i></i>
+                <div class="child">
+                    <ul>
+                        <li>
+                            <img src="./img/iphon.jpg" alt="">
+                            <span>小米手机</span>
+                        </li>
+                        <li>
+                            <img src="./img/iphon.jpg" alt="">
+                            <span>小米手机</span>
+                        </li> 
+                        <li>
+                            <img src="./img/iphon.jpg" alt="">
+                            <span>小米手机</span>
+                        </li>
+                        <li>
+                            <img src="./img/iphon.jpg" alt="">
+                            <span>小米手机</span>
+                        </li>
+                        <li>
+                            <img src="./img/iphon.jpg" alt="">
+                            <span>小米手机</span>
+                        </li>
+                        <li>
+                            <img src="./img/iphon.jpg" alt="">
+                            <span>小米手机</span>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+<!-- 4个框框-->
+
+    <div class="four">
+        <div class="four_left">
+            <ul class="list">
+                <li>
+                    <div>
+                        <img src="./img/kill.png" alt="">
+                    </div>
+                    <p>小米秒杀</p>
+                </li>
+
+                <li>
+                    <div>
+                        <img src="./img/house.png" alt="">
+                    </div>
+                    <p>企业团购</p>
+                </li>
+                <li>
+                    <div>
+                        <img src="./img/f.png" alt="">
+                    </div>
+                    <p>F码通道`</p>
+                </li>
+                <li>
+                    <div>
+                        <img src="./img/card.png" alt="">
+                    </div>
+                    <p>米粉卡</p>
+                </li>
+                <li>
+                    <div>
+                        <img src="./img/amount.png" alt="">
+                    </div>
+                    <p>以旧换新</p>
+                </li>
+                <li>
+                    <div>
+                        <img src="./img/pay.png" alt="">
+                    </div>
+                    <p>话费充值</p>
+                </li>
+            </ul>
+        </div>
+        <div class="four_right">
+            <div class="three_img">
+                <img src="./img/banner-01.jpg" alt="">
+            </div>
+            <div class="three_img">
+                <img src="./img/banner-02.jpg" alt="">
+            </div>
+            <div class="three_img">
+                <img src="./img/banner-03.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- 秒杀 -->
+
+</body>
+</html>
