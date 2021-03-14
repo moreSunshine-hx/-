@@ -332,3 +332,65 @@ float: left;
 .four .four_right .three_img:hover{
     box-shadow: 0 10px 8px 2px #dcdcdc;
 }
+.goods{
+    background-color: #f5f5f5;
+}
+.title{
+    width: 1240px;
+    height: 50px;
+    margin: 10px auto;
+    line-height: 50px;
+}
+.title span{
+    float: left;
+    font-size: 22px;
+    margin-left: 20px;
+}
+.title .jintou{
+    float: right;
+    width: 70px;
+    height: 25px;
+    margin-top: 25px;
+    margin-right: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+.title .jintou i{
+    width: 36px;
+    height: 24px;
+    border: #b0b0b0 1px solid;
+    display: inline-block;
+}
+/* 秒杀 */
+.miaosha{
+    width: 1226px;
+    height: 340px;
+    margin: 0 auto;
+    border: 1px solid #000;
+}
+.miaosha .time{
+    width: 234px ;
+    height: 340px;
+    display: inline-block;
+    border-top: 1px solid #000;
+    background-color: #f1eded;
+    padding-top: 39px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.miaosha .time .daojishi{
+    width: 234px;
+    height: 340px;
+    margin-top: ;
+}
+.miaosha .time .daojishi .round{
+    display: inline-block;
+    font-size: 21px;
+    color: #e53934;
+}
+.miaosha .good_list{
+    width: 970px;
+    height: 339px;
+    border: 1px solid #000;
+
+}
